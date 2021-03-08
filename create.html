@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #create{
+            font-size: Bell MT;
+            border-radius: 5px;
+            border:2px solid black;
+            background-color: rgb(74, 142, 145);
+            padding-left: 40px;
+            padding-right: 60px;
+            text-align: center;
+     
+        }
+        body{
+            background-color: rgb(122, 86, 41);
+            background-image: url("Images/books1.jpg");
+        }
+        p{
+            font-family: Chiller;
+            font-size: 30px;
+        }
+        h1{
+            font-family: Bell MT;
+            font-size: 40px;
+            color: rgb(161, 49, 20);
+        }
+        button{
+            border-radius: 5px;
+            color: rgb(31, 30, 28);
+            font-family: bell MT;
+            font-size: 20px;
+        }
+        .mylink{
+            border: 1px solid black;
+            font-family: Bell MT;
+            font-size: 18px;
+            background-color: rgb(153, 126, 86);
+            border-radius: 5px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "create">
+        <h1>My Book Collecton App</h1>
+        <p>Welcome to my Books Collection App. This Application Records
+            and shows a list of favorite books. It then displays what books
+            and readers have been recorded.
+        </p>
+        
+        <form method="GET"action="/create">
+            <p>NAME:</p> 
+            <input type ="text" name="Name" size="40" placeholder="Enter Full Name Here"><br>
+            <p>BOOK TITLE:</p>
+            <input type ="text" name="title"size ="40"placeholder="Enter Favorite Book title here"><br>
+
+            <button id ="submit" type ="submit">Save</button>
+        </form>
+    
+        <div class ="mylink">
+
+            <li><a href ="/search">Search Records Here</a></li>
+            <li><a href ="/favorite">See Favorite Here</a></li>
+        </div>
+    </div>
+</body>
+</html>
